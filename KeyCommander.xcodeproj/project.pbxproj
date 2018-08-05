@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4217C4621152F2700CF12A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4217C4521152F2700CF12A7 /* AppDelegate.swift */; };
+		F4217C4821152F2800CF12A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4217C4721152F2800CF12A7 /* Assets.xcassets */; };
+		F4217C4B21152F2800CF12A7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4217C4921152F2800CF12A7 /* MainMenu.xib */; };
+		F4217C5721152F2800CF12A7 /* KeyCommanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4217C5621152F2800CF12A7 /* KeyCommanderTests.swift */; };
+		F4217C6421152F4D00CF12A7 /* InputModeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4217C6321152F4D00CF12A7 /* InputModeTest.swift */; };
+		F4217C662115325B00CF12A7 /* SetupModeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4217C652115325B00CF12A7 /* SetupModeTest.swift */; };
+		F4217C6C2115331300CF12A7 /* SetupMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4217C6B2115331300CF12A7 /* SetupMode.swift */; };
+		F4217C6E211533FE00CF12A7 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4217C6D211533FE00CF12A7 /* Mode.swift */; };
+		F4217C742115361100CF12A7 /* InputMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4217C732115361100CF12A7 /* InputMode.swift */; };
+		F4217C772115EF3A00CF12A7 /* CommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4217C752115EF3A00CF12A7 /* CommandViewController.swift */; };
+		F4217C782115EF3A00CF12A7 /* CommandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4217C762115EF3A00CF12A7 /* CommandViewController.xib */; };
+		F421D46E21171CD1006F33E0 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F421D46C21171CD1006F33E0 /* MainWindowController.swift */; };
+		F421D46F21171CD1006F33E0 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F421D46D21171CD1006F33E0 /* MainWindowController.xib */; };
+		F421D47121171F2C006F33E0 /* KeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F421D47021171F2C006F33E0 /* KeyCode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4217C5321152F2800CF12A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4217C3A21152F2700CF12A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4217C4121152F2700CF12A7;
+			remoteInfo = KeyCommander;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4217C4221152F2700CF12A7 /* KeyCommander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyCommander.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4217C4521152F2700CF12A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4217C4721152F2800CF12A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4217C4A21152F2800CF12A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F4217C4C21152F2800CF12A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4217C4D21152F2800CF12A7 /* KeyCommander.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyCommander.entitlements; sourceTree = "<group>"; };
+		F4217C5221152F2800CF12A7 /* KeyCommanderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyCommanderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4217C5621152F2800CF12A7 /* KeyCommanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCommanderTests.swift; sourceTree = "<group>"; };
+		F4217C5821152F2800CF12A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4217C6321152F4D00CF12A7 /* InputModeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputModeTest.swift; sourceTree = "<group>"; };
+		F4217C652115325B00CF12A7 /* SetupModeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SetupModeTest.swift; path = KeyCommanderTests/SetupModeTest.swift; sourceTree = SOURCE_ROOT; };
+		F4217C6B2115331300CF12A7 /* SetupMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupMode.swift; sourceTree = "<group>"; };
+		F4217C6D211533FE00CF12A7 /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+		F4217C732115361100CF12A7 /* InputMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputMode.swift; sourceTree = "<group>"; };
+		F4217C752115EF3A00CF12A7 /* CommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandViewController.swift; sourceTree = "<group>"; };
+		F4217C762115EF3A00CF12A7 /* CommandViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommandViewController.xib; sourceTree = "<group>"; };
+		F421D46C21171CD1006F33E0 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		F421D46D21171CD1006F33E0 /* MainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		F421D47021171F2C006F33E0 /* KeyCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4217C3F21152F2700CF12A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4217C4F21152F2800CF12A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4217C3921152F2700CF12A7 = {
+			isa = PBXGroup;
+			children = (
+				F4217C4421152F2700CF12A7 /* KeyCommander */,
+				F4217C5521152F2800CF12A7 /* KeyCommanderTests */,
+				F4217C4321152F2700CF12A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4217C4321152F2700CF12A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4217C4221152F2700CF12A7 /* KeyCommander.app */,
+				F4217C5221152F2800CF12A7 /* KeyCommanderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4217C4421152F2700CF12A7 /* KeyCommander */ = {
+			isa = PBXGroup;
+			children = (
+				F4217C4521152F2700CF12A7 /* AppDelegate.swift */,
+				F421D46C21171CD1006F33E0 /* MainWindowController.swift */,
+				F421D46D21171CD1006F33E0 /* MainWindowController.xib */,
+				F4217C752115EF3A00CF12A7 /* CommandViewController.swift */,
+				F4217C762115EF3A00CF12A7 /* CommandViewController.xib */,
+				F421D47021171F2C006F33E0 /* KeyCode.swift */,
+				F4217C6D211533FE00CF12A7 /* Mode.swift */,
+				F4217C6B2115331300CF12A7 /* SetupMode.swift */,
+				F4217C732115361100CF12A7 /* InputMode.swift */,
+				F4217C4721152F2800CF12A7 /* Assets.xcassets */,
+				F4217C4921152F2800CF12A7 /* MainMenu.xib */,
+				F4217C4C21152F2800CF12A7 /* Info.plist */,
+				F4217C4D21152F2800CF12A7 /* KeyCommander.entitlements */,
+			);
+			path = KeyCommander;
+			sourceTree = "<group>";
+		};
+		F4217C5521152F2800CF12A7 /* KeyCommanderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4217C5621152F2800CF12A7 /* KeyCommanderTests.swift */,
+				F4217C6321152F4D00CF12A7 /* InputModeTest.swift */,
+				F4217C652115325B00CF12A7 /* SetupModeTest.swift */,
+				F4217C5821152F2800CF12A7 /* Info.plist */,
+			);
+			path = KeyCommanderTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4217C4121152F2700CF12A7 /* KeyCommander */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4217C5B21152F2800CF12A7 /* Build configuration list for PBXNativeTarget "KeyCommander" */;
+			buildPhases = (
+				F4217C3E21152F2700CF12A7 /* Sources */,
+				F4217C3F21152F2700CF12A7 /* Frameworks */,
+				F4217C4021152F2700CF12A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyCommander;
+			productName = KeyCommander;
+			productReference = F4217C4221152F2700CF12A7 /* KeyCommander.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4217C5121152F2800CF12A7 /* KeyCommanderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4217C5E21152F2800CF12A7 /* Build configuration list for PBXNativeTarget "KeyCommanderTests" */;
+			buildPhases = (
+				F4217C4E21152F2800CF12A7 /* Sources */,
+				F4217C4F21152F2800CF12A7 /* Frameworks */,
+				F4217C5021152F2800CF12A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4217C5421152F2800CF12A7 /* PBXTargetDependency */,
+			);
+			name = KeyCommanderTests;
+			productName = KeyCommanderTests;
+			productReference = F4217C5221152F2800CF12A7 /* KeyCommanderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4217C3A21152F2700CF12A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Hori,Masaki";
+				TargetAttributes = {
+					F4217C4121152F2700CF12A7 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					F4217C5121152F2800CF12A7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F4217C4121152F2700CF12A7;
+					};
+				};
+			};
+			buildConfigurationList = F4217C3D21152F2700CF12A7 /* Build configuration list for PBXProject "KeyCommander" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4217C3921152F2700CF12A7;
+			productRefGroup = F4217C4321152F2700CF12A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4217C4121152F2700CF12A7 /* KeyCommander */,
+				F4217C5121152F2800CF12A7 /* KeyCommanderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4217C4021152F2700CF12A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4217C4821152F2800CF12A7 /* Assets.xcassets in Resources */,
+				F4217C782115EF3A00CF12A7 /* CommandViewController.xib in Resources */,
+				F421D46F21171CD1006F33E0 /* MainWindowController.xib in Resources */,
+				F4217C4B21152F2800CF12A7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4217C5021152F2800CF12A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4217C3E21152F2700CF12A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4217C772115EF3A00CF12A7 /* CommandViewController.swift in Sources */,
+				F4217C4621152F2700CF12A7 /* AppDelegate.swift in Sources */,
+				F421D46E21171CD1006F33E0 /* MainWindowController.swift in Sources */,
+				F4217C6E211533FE00CF12A7 /* Mode.swift in Sources */,
+				F421D47121171F2C006F33E0 /* KeyCode.swift in Sources */,
+				F4217C6C2115331300CF12A7 /* SetupMode.swift in Sources */,
+				F4217C742115361100CF12A7 /* InputMode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4217C4E21152F2800CF12A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4217C5721152F2800CF12A7 /* KeyCommanderTests.swift in Sources */,
+				F4217C6421152F4D00CF12A7 /* InputModeTest.swift in Sources */,
+				F4217C662115325B00CF12A7 /* SetupModeTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4217C5421152F2800CF12A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4217C4121152F2700CF12A7 /* KeyCommander */;
+			targetProxy = F4217C5321152F2800CF12A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4217C4921152F2800CF12A7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4217C4A21152F2800CF12A7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4217C5921152F2800CF12A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4217C5A21152F2800CF12A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F4217C5C21152F2800CF12A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeyCommander/KeyCommander.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyCommander/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.KeyCommander;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F4217C5D21152F2800CF12A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeyCommander/KeyCommander.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyCommander/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.KeyCommander;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		F4217C5F21152F2800CF12A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyCommanderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.KeyCommanderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyCommander.app/Contents/MacOS/KeyCommander";
+			};
+			name = Debug;
+		};
+		F4217C6021152F2800CF12A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyCommanderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.KeyCommanderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyCommander.app/Contents/MacOS/KeyCommander";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4217C3D21152F2700CF12A7 /* Build configuration list for PBXProject "KeyCommander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4217C5921152F2800CF12A7 /* Debug */,
+				F4217C5A21152F2800CF12A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4217C5B21152F2800CF12A7 /* Build configuration list for PBXNativeTarget "KeyCommander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4217C5C21152F2800CF12A7 /* Debug */,
+				F4217C5D21152F2800CF12A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4217C5E21152F2800CF12A7 /* Build configuration list for PBXNativeTarget "KeyCommanderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4217C5F21152F2800CF12A7 /* Debug */,
+				F4217C6021152F2800CF12A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4217C3A21152F2700CF12A7 /* Project object */;
+}
