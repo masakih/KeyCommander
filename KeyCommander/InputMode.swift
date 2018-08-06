@@ -23,7 +23,10 @@ private class ResetOperation: Operation {
         
         while resetTime > Date().timeIntervalSince1970 {
             
-            //
+            if isCancelled {
+                
+                return
+            }
         }
         
         resetFunction()
